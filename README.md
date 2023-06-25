@@ -15,4 +15,13 @@ It is a [Maven](https://maven.apache.org/) based project, so you can open this p
  * `cdk diff`        compare deployed stack with current state
  * `cdk docs`        open CDK documentation
 
+
+## Project Commands
+
+* `cdk deploy Vpc Cluster --require-approval never --parameters  Rds:databasePassword=matilde123456 Rds Sns Ddb Service01 Service02 InvoiceApp`
+* `cdk deploy --all --require-approval never --parameters Rds:databasePassword=matilde123456`
+
+* `cdk destroy --require-approval never  Vpc Cluster Rds Sns Ddb Service01 Service02 InvoiceApp`
+
+
 Enjoy!
